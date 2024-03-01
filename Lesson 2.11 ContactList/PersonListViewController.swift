@@ -15,7 +15,6 @@ final class PersonListViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else {return}
         let detailsVC = segue.destination as? PersonDetailsViewController
-        detailsVC?.navigationItem.title = personList[indexPath.row].fio
         detailsVC?.person = personList[indexPath.row]
     }
 }
