@@ -41,6 +41,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A72E9B992B94636200785FC4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A7A965B02B8F41E100E92942 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A72E9B9A2B94639800785FC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7A965BE2B8F425500E92942 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A72E9B9B2B9463B500785FC4 /* DataStores */ = {
+			isa = PBXGroup;
+			children = (
+				A7A965C02B8F430C00E92942 /* DataStore.swift */,
+			);
+			path = DataStores;
+			sourceTree = "<group>";
+		};
+		A72E9B9C2B9463CD00785FC4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7A965AE2B8F41E100E92942 /* PersonListViewController.swift */,
+				A72E9B972B8F84D600785FC4 /* PersonDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A72E9B9D2B9463F300785FC4 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A7A965AA2B8F41E100E92942 /* AppDelegate.swift */,
+				A7A965AC2B8F41E100E92942 /* SceneDelegate.swift */,
+				A7A965B82B8F41E200E92942 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		A72E9B9E2B9464D200785FC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A7A965B32B8F41E200E92942 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A7A9659E2B8F41E100E92942 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +111,12 @@
 		A7A965A92B8F41E100E92942 /* Lesson 2.11 ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				A7A965AA2B8F41E100E92942 /* AppDelegate.swift */,
-				A7A965AC2B8F41E100E92942 /* SceneDelegate.swift */,
-				A7A965AE2B8F41E100E92942 /* PersonListViewController.swift */,
-				A72E9B972B8F84D600785FC4 /* PersonDetailsViewController.swift */,
-				A7A965BE2B8F425500E92942 /* Person.swift */,
-				A7A965C02B8F430C00E92942 /* DataStore.swift */,
-				A7A965B02B8F41E100E92942 /* Main.storyboard */,
-				A7A965B32B8F41E200E92942 /* Assets.xcassets */,
-				A7A965B82B8F41E200E92942 /* Info.plist */,
+				A72E9B9C2B9463CD00785FC4 /* ViewControllers */,
+				A72E9B992B94636200785FC4 /* Storyboards */,
+				A72E9B9A2B94639800785FC4 /* Models */,
+				A72E9B9B2B9463B500785FC4 /* DataStores */,
+				A72E9B9D2B9463F300785FC4 /* SupportFiles */,
+				A72E9B9E2B9464D200785FC4 /* Resources */,
 			);
 			path = "Lesson 2.11 ContactList";
 			sourceTree = "<group>";
@@ -288,7 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Lesson 2.11 ContactList/Info.plist";
+				INFOPLIST_FILE = "Lesson 2.11 ContactList/SupportFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Lesson 2.11 ContactList/Info.plist";
+				INFOPLIST_FILE = "Lesson 2.11 ContactList/SupportFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
