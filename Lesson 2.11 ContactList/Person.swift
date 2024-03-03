@@ -10,8 +10,29 @@ struct Person {
     }
     
     static func getPersonList() -> [Person] {
-        (1...9).map {_ in
-            DataStore().getRandomPerson()
+        
+        let personList = DataStore()
+        
+        let names = personList.names.shuffled()
+        let surnames = personList.surnames.shuffled()
+        let phones = personList.phones.shuffled()
+        let emails = personList.emails.shuffled()
+        
+        let namesQty = names.count
+        let surnamesQty = surnames.count
+        let phonesQty = phones.count
+        let emailQty = emails.count
+        
+        let personsQty = min(namesQty, surnamesQty, phonesQty, emailQty)
+        
+        return (0..<personsQty).map {index in
+            Person(
+                name: names[index],
+                surname: surnames[index],
+                phone: phones[index],
+                email: emails[index]
+            )
         }
+        
     }
 }
